@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login"
+    android:orientation="vertical"
+    android:layout_margin="35dp">
+
+    <ImageView
+        android:layout_width="331dp"
+        android:layout_height="343dp"
+        android:src="@drawable/netflix" />
+    <TextView
+        android:id="@+id/tvRegister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Which one is a Netflix Original Series??"
+        android:textColor="@color/Red"
+        android:textSize="22sp" />
+    <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <RadioButton android:id="@+id/radio_SK"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sefirin Kizi"
+            android:onClick="onRadioButtonClicked"
+            tools:ignore="OnClick"
+            />
+        <RadioButton android:id="@+id/radio_kpa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kara Para Ask"
+            android:onClick="onRadioButtonClicked"
+            tools:ignore="OnClick"
+            />
+        <RadioButton android:id="@+id/radio_CDP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Casa De Papel"
+            android:onClick="onRadioButtonClicked"
+            tools:ignore="OnClick"
+            />
+        <RadioButton android:id="@+id/radio_alev"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Alev Alev"
+            android:onClick="onRadioButtonClicked"
+            tools:ignore="OnClick"
+            />
+    </RadioGroup>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:text="PREVIOUS"
+            android:id="@+id/bPrevious"
+            android:layout_alignParentTop="false"
+            app:backgroundTint="#EA4545"
+            />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:layout_height="wrap_content"
+            android:text="NEXT"
+            android:id="@+id/bNext"
+            app:backgroundTint="#EA4545"/>
+
+    </LinearLayout>
+</LinearLayout>

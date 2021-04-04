@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.quizapp_o12">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/quiz"
+        android:label="QUIZZ"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.QuizApp_O12">
+        <activity android:name=".Quiz"></activity>
+        <activity android:name=".Quiz3" />
+        <activity android:name=".Score" />
+        <activity android:name=".Quiz2" />
+        <activity android:name=".Quiz1" />
+        <activity android:name=".Register" />
+        <activity android:name=".Login">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+    <uses-permission android:name="android.permission.INTERNET" />
+
+</manifest>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login"
+    android:orientation="vertical"
+    android:layout_margin="35dp">
+
+    <ImageView
+        android:layout_width="331dp"
+        android:layout_height="415dp"
+        android:src="@drawable/gameover" />
+
+    <TextView
+        android:id="@+id/tvScoreMsg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Your Score is:"
+        android:textColor="@color/Red"
+        android:textSize="22sp" />
+    <TextView
+        android:id="@+id/tvScoreValue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@color/Red"
+        android:textSize="22sp" />
+
+    <Button
+        android:id="@+id/bPlayAgain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Play Again"
+        app:backgroundTint="#EA4545"
+        />
+
+
+
+</LinearLayout>
